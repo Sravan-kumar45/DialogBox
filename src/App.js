@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import AddStatus from './components/AddStatus';
+import FirstCopyProcessed from './components/FirstCopyProcessed';
+import GatePassReceived from './components/GatePassReceived';
+import OutofCharge from './components/OutofCharge';
+import PositiveAcknowledgement from './components/PositiveAcknowledgement';
+import QueryRaised from './components/QueryRaised';
+import QueryReply from './components/QueryReply';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AddStatus />
+      <PositiveAcknowledgement />
+      <QueryRaised />
+      <QueryReply />
+      <FirstCopyProcessed />
+      <OutofCharge />
+      <GatePassReceived />
+    </>
   );
 }
 
